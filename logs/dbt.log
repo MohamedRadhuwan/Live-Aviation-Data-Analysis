@@ -1,0 +1,343 @@
+[0m17:41:52.739207 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002237E9B7C80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022302513440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022302510350>]}
+
+
+============================== 17:41:52.746409 | f8481221-f686-4578-be80-195f2cd48b62 ==============================
+[0m17:41:52.746409 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m17:41:52.748933 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Asus-2025\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt init dbt_aviation', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m17:41:52.748933 [debug] [MainThread]: Tracking: tracking
+[0m17:41:52.788478 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\Asus-2025\.dbt
+[0m17:41:52.791512 [debug] [MainThread]: Starter project path: C:\Users\Asus-2025\OneDrive\Desktop\Aircraft Data Analytics\venv\Lib\site-packages\dbt\include\starter_project
+[0m17:41:52.828594 [info ] [MainThread]: Setting up your profile.
+[0m17:42:34.477584 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m17:42:34.477584 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m17:42:34.477584 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m17:48:36.742111 [info ] [MainThread]: Profile dbt_aviation written to C:\Users\Asus-2025\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m17:48:36.745120 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m17:48:36.745120 [info ] [MainThread]: dbt version: 1.13.0-b1
+[0m17:48:36.745120 [info ] [MainThread]: python version: 3.12.9
+[0m17:48:36.747387 [info ] [MainThread]: python path: C:\Users\Asus-2025\OneDrive\Desktop\Aircraft Data Analytics\venv\Scripts\python.exe
+[0m17:48:36.747387 [info ] [MainThread]: os info: Windows-11-10.0.26300-SP0
+[0m17:48:36.813656 [info ] [MainThread]: Using profiles dir at C:\Users\Asus-2025\.dbt
+[0m17:48:36.813656 [info ] [MainThread]: Using profiles.yml file at C:\Users\Asus-2025\.dbt\profiles.yml
+[0m17:48:36.815162 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Asus-2025\OneDrive\Desktop\Aircraft Data Analytics\dbt_aviation\dbt_project.yml
+[0m17:48:36.816194 [info ] [MainThread]: adapter type: snowflake
+[0m17:48:36.816194 [info ] [MainThread]: adapter version: 1.12.4
+[0m17:48:36.907580 [info ] [MainThread]: Configuration:
+[0m17:48:36.907580 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:48:36.907580 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:48:36.907580 [info ] [MainThread]: Required dependencies:
+[0m17:48:36.907580 [debug] [MainThread]: Executing "git --help"
+[0m17:48:36.958888 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:48:36.958888 [debug] [MainThread]: STDERR: "b''"
+[0m17:48:36.958888 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:48:36.958888 [info ] [MainThread]: Connection:
+[0m17:48:36.958888 [info ] [MainThread]:   account: KJASJGT-ZY35258
+[0m17:48:36.958888 [info ] [MainThread]:   user: RADHUWAN
+[0m17:48:36.958888 [info ] [MainThread]:   database: AVIATION_DB
+[0m17:48:36.958888 [info ] [MainThread]:   warehouse: AVIATION_WH
+[0m17:48:36.958888 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m17:48:36.958888 [info ] [MainThread]:   schema: AVIATION_SCHEMA
+[0m17:48:36.958888 [info ] [MainThread]:   authenticator: None
+[0m17:48:36.958888 [info ] [MainThread]:   oauth_client_id: None
+[0m17:48:36.958888 [info ] [MainThread]:   query_tag: None
+[0m17:48:36.964093 [info ] [MainThread]:   client_session_keep_alive: False
+[0m17:48:36.964093 [info ] [MainThread]:   host: None
+[0m17:48:36.964093 [info ] [MainThread]:   port: None
+[0m17:48:36.964093 [info ] [MainThread]:   proxy_host: None
+[0m17:48:36.964093 [info ] [MainThread]:   proxy_port: None
+[0m17:48:36.965358 [info ] [MainThread]:   protocol: None
+[0m17:48:36.966144 [info ] [MainThread]:   connect_retries: 1
+[0m17:48:36.966144 [info ] [MainThread]:   connect_timeout: None
+[0m17:48:36.966979 [info ] [MainThread]:   retry_on_database_errors: False
+[0m17:48:36.967291 [info ] [MainThread]:   retry_all: False
+[0m17:48:36.967851 [info ] [MainThread]:   insecure_mode: False
+[0m17:48:36.967851 [info ] [MainThread]:   reuse_connections: True
+[0m17:48:36.968916 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m17:48:36.969273 [info ] [MainThread]:   workload_identity_provider: None
+[0m17:48:36.969273 [info ] [MainThread]:   workload_identity_entra_resource: None
+[0m17:48:36.969273 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m17:48:36.970922 [info ] [MainThread]: Registered adapter: snowflake=1.12.4
+[0m17:48:37.548747 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m17:48:37.548747 [debug] [MainThread]: Using snowflake connection "debug"
+[0m17:48:37.552249 [debug] [MainThread]: On debug: select 1 as id
+[0m17:48:37.552249 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:48:39.238797 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m17:48:39.238797 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m17:48:39.238797 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m17:48:39.238797 [info ] [MainThread]: [31m1 check failed:[0m
+[0m17:48:39.238797 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  390100 (28000): Failed to connect to DB: KJASJGT-ZY35258.snowflakecomputing.com:443. Incorrect username or password was specified. [2fb9fb35-92a1-4ff0-8618-d3b023564a95]
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m17:48:39.238797 [info ] [MainThread]: Your new dbt project "dbt_aviation" was created!
+Initialized new project in C:\Users\Asus-2025\OneDrive\Desktop\Aircraft Data Analytics\dbt_aviation\dbt_aviation
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m17:48:39.238797 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m17:48:39.238797 [debug] [MainThread]: Command `dbt init` succeeded at 17:48:39.238797 after 406.68 seconds
+[0m17:48:39.238797 [debug] [MainThread]: Connection 'debug' was left open.
+[0m17:48:39.238797 [debug] [MainThread]: On debug: No close available on handle
+[0m17:48:39.238797 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022303EE3590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022303EE2840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002230173B9B0>]}
+[0m17:48:39.238797 [debug] [MainThread]: Flushing usage events
+[0m17:48:41.094677 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:13:42.318438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A83FD4EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A8598C470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A83C12030>]}
+
+
+============================== 19:13:42.324343 | b1553c1f-f52f-4f4a-b448-1ca664b21485 ==============================
+[0m19:13:42.324343 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m19:13:42.324343 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Asus-2025\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init aviation_dbt', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m19:13:42.324343 [debug] [MainThread]: Tracking: tracking
+[0m19:13:42.364495 [debug] [MainThread]: Starter project path: C:\Users\Asus-2025\OneDrive\Desktop\Aircraft Data Analytics\venv\Lib\site-packages\dbt\include\starter_project
+[0m19:13:42.386657 [info ] [MainThread]: Setting up your profile.
+[0m19:15:46.952148 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m19:15:46.952148 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m19:15:46.952148 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m19:18:18.034173 [info ] [MainThread]: Profile aviation_dbt written to C:\Users\Asus-2025\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m19:18:18.034173 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m19:18:18.038518 [info ] [MainThread]: dbt version: 1.13.0-b1
+[0m19:18:18.038518 [info ] [MainThread]: python version: 3.12.9
+[0m19:18:18.039561 [info ] [MainThread]: python path: C:\Users\Asus-2025\OneDrive\Desktop\Aircraft Data Analytics\venv\Scripts\python.exe
+[0m19:18:18.039561 [info ] [MainThread]: os info: Windows-11-10.0.26300-SP0
+[0m19:18:18.108998 [info ] [MainThread]: Using profiles dir at C:\Users\Asus-2025\.dbt
+[0m19:18:18.108998 [info ] [MainThread]: Using profiles.yml file at C:\Users\Asus-2025\.dbt\profiles.yml
+[0m19:18:18.108998 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Asus-2025\OneDrive\Desktop\Aircraft Data Analytics\aviation_dbt\dbt_project.yml
+[0m19:18:18.114008 [info ] [MainThread]: adapter type: snowflake
+[0m19:18:18.114008 [info ] [MainThread]: adapter version: 1.12.4
+[0m19:18:18.207089 [info ] [MainThread]: Configuration:
+[0m19:18:18.207089 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:18:18.207089 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:18:18.207089 [info ] [MainThread]: Required dependencies:
+[0m19:18:18.207089 [debug] [MainThread]: Executing "git --help"
+[0m19:18:18.262405 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:18:18.262405 [debug] [MainThread]: STDERR: "b''"
+[0m19:18:18.262405 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:18:18.263916 [info ] [MainThread]: Connection:
+[0m19:18:18.263916 [info ] [MainThread]:   account: KJASJGT-ZY35258
+[0m19:18:18.263916 [info ] [MainThread]:   user: RADHUWAN
+[0m19:18:18.263916 [info ] [MainThread]:   database: AVIATION_DB
+[0m19:18:18.263916 [info ] [MainThread]:   warehouse: AVIATION_WH
+[0m19:18:18.263916 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m19:18:18.263916 [info ] [MainThread]:   schema: STAGING
+[0m19:18:18.263916 [info ] [MainThread]:   authenticator: None
+[0m19:18:18.263916 [info ] [MainThread]:   oauth_client_id: None
+[0m19:18:18.267457 [info ] [MainThread]:   query_tag: None
+[0m19:18:18.267457 [info ] [MainThread]:   client_session_keep_alive: False
+[0m19:18:18.267457 [info ] [MainThread]:   host: None
+[0m19:18:18.269092 [info ] [MainThread]:   port: None
+[0m19:18:18.269761 [info ] [MainThread]:   proxy_host: None
+[0m19:18:18.270236 [info ] [MainThread]:   proxy_port: None
+[0m19:18:18.270753 [info ] [MainThread]:   protocol: None
+[0m19:18:18.270753 [info ] [MainThread]:   connect_retries: 1
+[0m19:18:18.271804 [info ] [MainThread]:   connect_timeout: None
+[0m19:18:18.272494 [info ] [MainThread]:   retry_on_database_errors: False
+[0m19:18:18.272812 [info ] [MainThread]:   retry_all: False
+[0m19:18:18.272812 [info ] [MainThread]:   insecure_mode: False
+[0m19:18:18.272812 [info ] [MainThread]:   reuse_connections: True
+[0m19:18:18.274080 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m19:18:18.274080 [info ] [MainThread]:   workload_identity_provider: None
+[0m19:18:18.275217 [info ] [MainThread]:   workload_identity_entra_resource: None
+[0m19:18:18.275217 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m19:18:18.276277 [info ] [MainThread]: Registered adapter: snowflake=1.12.4
+[0m19:18:18.694164 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m19:18:18.699550 [debug] [MainThread]: Using snowflake connection "debug"
+[0m19:18:18.699550 [debug] [MainThread]: On debug: select 1 as id
+[0m19:18:18.699550 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:18:21.678298 [debug] [MainThread]: SQL status: SUCCESS 1 in 2.977 seconds
+[0m19:18:21.678298 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:18:21.678298 [info ] [MainThread]: [32mAll checks passed![0m
+[0m19:18:21.679778 [info ] [MainThread]: Your new dbt project "aviation_dbt" was created!
+Initialized new project in C:\Users\Asus-2025\OneDrive\Desktop\Aircraft Data Analytics\aviation_dbt\aviation_dbt
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:18:21.680391 [debug] [MainThread]: Command `dbt init` succeeded at 19:18:21.680391 after 279.60 seconds
+[0m19:18:21.680391 [debug] [MainThread]: Connection 'debug' was left open.
+[0m19:18:21.680391 [debug] [MainThread]: On debug: Close
+[0m19:18:22.119605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A83C7A4B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A816B5FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A816B5EB0>]}
+[0m19:18:22.119605 [debug] [MainThread]: Flushing usage events
+[0m19:18:23.967648 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:22:38.913091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F4D2B4110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F4A1D40B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F4F7268D0>]}
+
+
+============================== 19:22:38.917066 | 27d0df9a-c99c-444b-a3b7-708eb53b8e9a ==============================
+[0m19:22:38.917066 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m19:22:38.918574 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Asus-2025\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m19:22:38.918574 [debug] [MainThread]: Tracking: tracking
+[0m19:22:38.948723 [info ] [MainThread]: dbt version: 1.13.0-b1
+[0m19:22:38.948723 [info ] [MainThread]: python version: 3.12.9
+[0m19:22:38.948723 [info ] [MainThread]: python path: C:\Users\Asus-2025\OneDrive\Desktop\Aircraft Data Analytics\venv\Scripts\python.exe
+[0m19:22:38.948723 [info ] [MainThread]: os info: Windows-11-10.0.26300-SP0
+[0m19:22:39.601537 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m19:22:39.603531 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m19:22:39.603531 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m19:22:39.758646 [info ] [MainThread]: Using profiles dir at C:\Users\Asus-2025\.dbt
+[0m19:22:39.758646 [info ] [MainThread]: Using profiles.yml file at C:\Users\Asus-2025\.dbt\profiles.yml
+[0m19:22:39.758646 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Asus-2025\OneDrive\Desktop\Aircraft Data Analytics\dbt_project.yml
+[0m19:22:39.758646 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m19:22:39.758646 [debug] [MainThread]: Command `dbt debug` failed at 19:22:39.758646 after 1.07 seconds
+[0m19:22:39.767920 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F4F8BB320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F501E3500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F504780E0>]}
+[0m19:22:39.767920 [debug] [MainThread]: Flushing usage events
+[0m19:22:41.608119 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:39:01.152512 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001540C54C6B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001540C54D550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001540C54C410>]}
+
+
+============================== 19:39:01.162090 | 4365aee4-5301-44cd-8269-243c7c75a8e9 ==============================
+[0m19:39:01.162090 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m19:39:01.162090 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Asus-2025\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'logs'}
+[0m19:39:01.162090 [debug] [MainThread]: Tracking: tracking
+[0m19:39:01.197721 [info ] [MainThread]: dbt version: 1.13.0-b1
+[0m19:39:01.197721 [info ] [MainThread]: python version: 3.12.9
+[0m19:39:01.197721 [info ] [MainThread]: python path: C:\Users\Asus-2025\OneDrive\Desktop\Aircraft Data Analytics\venv\Scripts\python.exe
+[0m19:39:01.197721 [info ] [MainThread]: os info: Windows-11-10.0.26300-SP0
+[0m19:39:01.893537 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m19:39:01.893537 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m19:39:01.895068 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m19:39:02.071414 [info ] [MainThread]: Using profiles dir at C:\Users\Asus-2025\.dbt
+[0m19:39:02.071414 [info ] [MainThread]: Using profiles.yml file at C:\Users\Asus-2025\.dbt\profiles.yml
+[0m19:39:02.071414 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Asus-2025\OneDrive\Desktop\Aircraft Data Analytics\dbt_project.yml
+[0m19:39:02.071414 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m19:39:02.078642 [debug] [MainThread]: Command `dbt debug` failed at 19:39:02.078642 after 1.14 seconds
+[0m19:39:02.078642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001540A5FAE40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001540CA15C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001540D5E26F0>]}
+[0m19:39:02.080009 [debug] [MainThread]: Flushing usage events
+[0m19:39:03.565704 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:44:32.661073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002664CDF00E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002664AE4AB70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002664B610EC0>]}
+
+
+============================== 19:44:32.665676 | ef3969b6-2d96-4345-9e47-d9edfdd876e7 ==============================
+[0m19:44:32.665676 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m19:44:32.665676 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Asus-2025\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m19:44:32.665676 [debug] [MainThread]: Tracking: tracking
+[0m19:44:32.696670 [info ] [MainThread]: dbt version: 1.13.0-b1
+[0m19:44:32.696670 [info ] [MainThread]: python version: 3.12.9
+[0m19:44:32.696670 [info ] [MainThread]: python path: C:\Users\Asus-2025\OneDrive\Desktop\Aircraft Data Analytics\venv\Scripts\python.exe
+[0m19:44:32.696670 [info ] [MainThread]: os info: Windows-11-10.0.26300-SP0
+[0m19:44:33.380906 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m19:44:33.382023 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m19:44:33.382023 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m19:44:33.544353 [info ] [MainThread]: Using profiles dir at C:\Users\Asus-2025\.dbt
+[0m19:44:33.546361 [info ] [MainThread]: Using profiles.yml file at C:\Users\Asus-2025\.dbt\profiles.yml
+[0m19:44:33.546361 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Asus-2025\OneDrive\Desktop\Aircraft Data Analytics\dbt_project.yml
+[0m19:44:33.546361 [info ] [MainThread]: adapter type: snowflake
+[0m19:44:33.546361 [info ] [MainThread]: adapter version: 1.12.4
+[0m19:44:33.546361 [info ] [MainThread]: Configuration:
+[0m19:44:33.546361 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:44:33.546361 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:44:33.546361 [info ] [MainThread]: Required dependencies:
+[0m19:44:33.546361 [debug] [MainThread]: Executing "git --help"
+[0m19:44:33.585478 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:44:33.601227 [debug] [MainThread]: STDERR: "b''"
+[0m19:44:33.601227 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:44:33.602346 [info ] [MainThread]: Connection:
+[0m19:44:33.602346 [info ] [MainThread]:   account: KJASJGT-ZY35258
+[0m19:44:33.602346 [info ] [MainThread]:   user: RADHUWAN
+[0m19:44:33.603416 [info ] [MainThread]:   database: AVIATION_DB
+[0m19:44:33.603416 [info ] [MainThread]:   warehouse: AVIATION_WH
+[0m19:44:33.603416 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m19:44:33.603416 [info ] [MainThread]:   schema: STAGING
+[0m19:44:33.603416 [info ] [MainThread]:   authenticator: None
+[0m19:44:33.603416 [info ] [MainThread]:   oauth_client_id: None
+[0m19:44:33.603416 [info ] [MainThread]:   query_tag: None
+[0m19:44:33.603416 [info ] [MainThread]:   client_session_keep_alive: False
+[0m19:44:33.603416 [info ] [MainThread]:   host: None
+[0m19:44:33.603416 [info ] [MainThread]:   port: None
+[0m19:44:33.603416 [info ] [MainThread]:   proxy_host: None
+[0m19:44:33.603416 [info ] [MainThread]:   proxy_port: None
+[0m19:44:33.603416 [info ] [MainThread]:   protocol: None
+[0m19:44:33.603416 [info ] [MainThread]:   connect_retries: 1
+[0m19:44:33.608388 [info ] [MainThread]:   connect_timeout: None
+[0m19:44:33.608928 [info ] [MainThread]:   retry_on_database_errors: False
+[0m19:44:33.608928 [info ] [MainThread]:   retry_all: False
+[0m19:44:33.609718 [info ] [MainThread]:   insecure_mode: False
+[0m19:44:33.609718 [info ] [MainThread]:   reuse_connections: True
+[0m19:44:33.609718 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m19:44:33.610915 [info ] [MainThread]:   workload_identity_provider: None
+[0m19:44:33.610915 [info ] [MainThread]:   workload_identity_entra_resource: None
+[0m19:44:33.611916 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m19:44:33.612641 [info ] [MainThread]: Registered adapter: snowflake=1.12.4
+[0m19:44:33.996416 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m19:44:34.012268 [debug] [MainThread]: Using snowflake connection "debug"
+[0m19:44:34.012268 [debug] [MainThread]: On debug: select 1 as id
+[0m19:44:34.014276 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:44:35.631274 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.621 seconds
+[0m19:44:35.631274 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:44:35.631274 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:44:35.631274 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\Asus-2025\OneDrive\Desktop\Aircraft Data Analytics\dbt_project.yml> not found
+
+[0m19:44:35.638375 [debug] [MainThread]: Command `dbt debug` failed at 19:44:35.638375 after 3.20 seconds
+[0m19:44:35.638375 [debug] [MainThread]: Connection 'debug' was left open.
+[0m19:44:35.638375 [debug] [MainThread]: On debug: Close
+[0m19:44:36.044944 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002664C9A68A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000266505961B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026650900F20>]}
+[0m19:44:36.044944 [debug] [MainThread]: Flushing usage events
+[0m19:44:37.705923 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:17:51.593742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000278EFBF1550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000278EFA84110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000278F1C8CDD0>]}
+
+
+============================== 21:17:51.600841 | 3fff444e-b357-4e8b-b53a-285d162c4ba6 ==============================
+[0m21:17:51.600841 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m21:17:51.600841 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Asus-2025\\.dbt', 'invocation_command': 'dbt run --select stg_opensky_stages', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m21:17:51.602257 [debug] [MainThread]: Tracking: tracking
+[0m21:17:51.602257 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Asus-2025\OneDrive\Desktop\Aircraft Data Analytics\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m21:17:51.603265 [debug] [MainThread]: Command `dbt run` failed at 21:17:51.603265 after 0.21 seconds
+[0m21:17:51.604266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000278EE6D9E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000278F3A4B7A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000278F108CB00>]}
+[0m21:17:51.604266 [debug] [MainThread]: Flushing usage events
+[0m21:17:53.663745 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:48:31.652012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D75E160260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D75C1BA990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D75E7E0140>]}
+
+
+============================== 20:48:31.660558 | 10c4e0ad-9b56-4574-9c34-c405957cbbe6 ==============================
+[0m20:48:31.660558 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m20:48:31.660558 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Asus-2025\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt ls --select mart_aircraft_activity', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m20:48:31.663599 [debug] [MainThread]: Tracking: tracking
+[0m20:48:31.663599 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Asus-2025\OneDrive\Desktop\Aircraft Data Analytics\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:48:31.663599 [debug] [MainThread]: Command `dbt ls` failed at 20:48:31.663599 after 0.18 seconds
+[0m20:48:31.663599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D75ED20CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D76088CBF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D75EB68AD0>]}
+[0m20:48:31.665910 [debug] [MainThread]: Flushing usage events
+[0m20:48:33.316331 [debug] [MainThread]: An error was encountered while trying to flush usage events
